@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andika Firmansyah | Front End Web Developer</title>
+  <meta name="description" content="Portofolio Andika Firmansyah - Front End Web Developer & Mahasiswa Teknik Informatika ITERA.">
+
+  <!-- Favicon / Ikon Situs -->
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+  <link rel="apple-touch-icon" href="images/favicon.jpg">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Primary Meta Tags -->
+<title>Andika Firmansyah - Front End Web Developer</title>
+<meta name="title" content="Andika Firmansyah - Front End Web Developer">
+<meta name="description" content="Mahasiswa Teknik Informatika ITERA yang berfokus membangun antarmuka web modern, responsif, dan interaktif.">
+
+<!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://andikafirmansyah.web.id/">
+<meta property="og:title" content="Andika Firmansyah - Front End Web Developer">
+<meta property="og:description" content="Mahasiswa Teknik Informatika ITERA yang berfokus membangun antarmuka web modern, responsif, dan interaktif.">
+<meta property="og:image" content="https://andikafirmansyah.web.id/assets/images/preview-banner.png">
+</head>
+<body>
+
+  <!-- Background Spotlight Effect -->
+  <div class="spotlight" id="spotlight"></div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#profile" class="logo">
+        </span>Andika<span class="logo-accent"> Firmansyah</span>
+      </a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#profile" class="nav-link active"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-address-card"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#portofolio" class="nav-link"><i class="fa-solid fa-layer-group"></i> Portofolio</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact Person</a></li>
+        </ul>
+        <a href="assets/CV_Andika Firmansyah_125140053.pdf" download="CV_Andika Firmansyah_125140053.pdf" target="_blank" class="btn-cv">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PROFILE (HERO) SECTION -->
+    <section id="profile" class="hero-section">
+      <div class="hero-container">
+    
+        <!-- KOLOM KIRI: Informasi Utama -->
+        <div class="hero-content">
+          <!-- Badge Ketersediaan (Sentuhan Manusiawi) -->
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Terbuka untuk Kolaborasi</span>
+          </div>
+        
+          <h1 class="hero-title">
+            Halo, Saya <span class="text-gradient">Andika Firmansyah</span>
+          </h1>
+        
+          <h2 class="hero-subtitle">Front End Web Developer</h2>
+        
+          <p class="hero-desc">
+            Fokus membangun pengalaman web yang intuitif lewat HTML, CSS, dan JavaScript. Saat ini sedang menempuh studi Informatika di ITERA.
+          </p>
+        
+          <div class="hero-cta">
+            <a href="#portofolio" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Lihat Portofolio
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-envelope"></i> Hubungi Saya
+            </a>
+          </div>
+        </div>
+    
+    <!-- KOLOM KANAN: Mockup Code Editor -->
+    <div class="hero-visual">
+      <!-- Kartu Utama Visual IDE -->
+      <div class="visual-card">
+        <div class="visual-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="visual-title">App.jsx</span>
+        </div>
+        <div class="visual-body">
+          <div class="code-line"><span class="c-purple">import</span> <span class="c-cyan">React</span> <span
+              class="c-purple">from</span> <span class="c-green">'react'</span>;</div>
+          <div class="code-line"><span class="c-purple">import</span> { <span class="c-cyan">CleanUI</span>, <span
+              class="c-cyan">FastPerf</span> } <span class="c-purple">from</span> <span class="c-green">'./frontend'</span>;
+          </div>
+          <div class="code-line">&nbsp;</div>
+          <div class="code-line"><span class="c-purple">export default function</span> <span class="c-yellow">App</span>() {
+          </div>
+          <div class="code-line indent"><span class="c-purple">return</span> (</div>
+          <div class="code-line indent-2"><span class="c-blue">&lt;</span><span class="c-cyan">InteractiveView</span></div>
+          <div class="code-line indent-3"><span class="c-yellow">responsive</span>={<span class="c-purple">true</span>}
+          </div>
+          <div class="code-line indent-3"><span class="c-yellow">userExperience</span>=<span
+              class="c-green">"seamless"</span></div>
+          <div class="code-line indent-2"><span class="c-blue">/&gt;</span></div>
+          <div class="code-line indent"><span class="c-purple">);</span></div>
+          <div class="code-line">}</div>
+        </div>
+      </div>
+    
+      <!-- Badge Teknologi Melayang (Floating Badges) -->
+      <div class="float-badge b-1">
+        <i class="fa-brands fa-react" style="color: #61dafb;"></i>
+        <span>React.js</span>
+      </div>
+      <div class="float-badge b-2">
+        <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="float-badge b-3">
+        <i class="fa-solid fa-wind" style="color: #38bdf8;"></i>
+        <span>Tailwind</span>
+      </div>
+      <div class="float-badge b-4">
+        <i class="fa-brands fa-css3-alt" style="color: #38bdf8;"></i>
+        <span>CSS3</span>
+      </div>
+    </div>
+    
+    </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+  <div class="section-header">
+    <h2 class="section-title">About Me</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid">
+    <!-- KOLOM KIRI: Narasi Teks -->
+    <div class="about-text">
+      <p class="lead-text">
+        Saya berfokus membangun pengalaman visual web yang interaktif dan nyaman digunakan.
+      </p>
+      <p>
+        Saat ini saya sedang menempuh pendidikan di <strong>Institut Teknologi Sumatera (ITERA)</strong> jurusan <strong>Teknik Informatika</strong>. Saya sedang belajar mendalami pengembangan aplikasi web modern, dengan perhatian khusus pada keterbacaan kode, aksesibilitas, serta performa aplikasi.
+      </p>
+      <p>
+        Saya selalu bersemangat mempelajari teknologi baru di dunia <em>Front End Development</em>, mengeksplorasi arsitektur komponen, serta berkolaborasi dalam tim untuk menyelesaikan masalah secara kreatif.
+      </p>
+    </div>
+
+    <!-- KOLOM KANAN: Kartu Quick Facts -->
+    <div class="about-card-container">
+      <div class="about-highlight-card">
+        <h3 class="card-title"><i class="fa-solid fa-sparkles"></i> Quick Facts</h3>
+    
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="info-label">Pendidikan</span>
+              <span class="info-value">Institut Teknologi Sumatera (ITERA)</span>
+            </div>
+          </div>
+    
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <span class="info-label">Lokasi</span>
+              <span class="info-value">Lampung, Indonesia</span>
+            </div>
+          </div>
+    
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-compass"></i></div>
+            <div>
+              <span class="info-label">Fokus Utama</span>
+              <span class="info-value status-active">Front End Dev & Responsive UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- SECTION PENDIDIKAN (EDUCATION) -->
+    <section id="education" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Pendidikan</h2>
+        <div class="section-line"></div>
+      </div>
+    
+      <div class="education-container">
+        <!-- Card Pendidikan 1: Kuliah -->
+        <div class="edu-card">
+          <div class="edu-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">S1 Teknik Informatika</h3>
+                <h4 class="edu-institution">Institut Teknologi Sumatera (ITERA)</h4>
+              </div>
+              <span class="edu-badge"><i class="fa-regular fa-calendar"></i> 2025 — Sekarang</span>
+            </div>
+            <p class="edu-desc">
+              Fokus mendalami Software Engineering, Web Development, Struktur Data, serta Arsitektur Komputer. Aktif
+              berpartisipasi dalam proyek pengembangan web dan kegiatan akademik kampus.
+            </p>
+            <ul class="edu-highlights">
+              <li><i class="fa-solid fa-angle-right"></i> Fokus pada Front-End Web Development & Responsive Design</li>
+              <li><i class="fa-solid fa-angle-right"></i> Mengembangkan proyek berbasis HTML, CSS, JavaScript, dan Framework
+                modern</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Card Pendidikan 2: SMA / Sekolah Sebelumnya -->
+        <div class="edu-card">
+          <div class="edu-icon">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">SMAN 1 KOTAGAJAH</h3>
+                <h4 class="edu-institution">SMA / Sekolah Menengah Atas</h4>
+              </div>
+              <span class="edu-badge"><i class="fa-regular fa-calendar"></i> 2022 — 2025</span>
+            </div>
+            <p class="edu-desc">
+              Lulus dengan fokus pada Matematika dan Ilmu Pengetahuan Alam, membangun fondasi pemikiran logis, analisis
+              data, dan pemecahan masalah.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PENGALAMAN & ORGANISASI -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Pengalaman &amp; Kepanitiaan</h2>
+        <div class="section-line"></div>
+      </div>
+    
+      <div class="experience-timeline">
+
+        <!-- Item Kepanitiaan 1 -->
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Ketua Pelaksana</h3>
+                <h4 class="exp-org">Class Meeting SMA</h4>
+              </div>
+              <span class="exp-date"><i class="fa-regular fa-calendar"></i> Mei 2024</span>
+            </div>
+            <p class="exp-desc">
+              Memimpin tim panitia dalam merancang, mengatur, dan mengeksekusi seluruh rangkaian acara Class Meeting
+              SMA. Bertanggung jawab atas koordinasi antar divisi, pengelolaan anggaran, serta memastikan kelancaran
+              acara dari awal hingga akhir.
+            </p>
+            <div class="exp-tags">
+              <span>Kepemimpinan</span>
+              <span>Kedisiplinan</span>
+              <span>Koordinasi</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item Kepanitiaan 2 -->
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">BPA Teknik Informatika</h3>
+                <h4 class="exp-org">Teknik Informatika 2025 — ITERA</h4>
+              </div>
+              <span class="exp-date"><i class="fa-regular fa-calendar"></i> 2025 - Sekarang</span>
+            </div>
+            <p class="exp-desc">
+              Mengkoordinasikan teknis alur lapangan, alokasi waktu, serta manajemen krisis selama kegiatan berlangsung agar
+              acara berjalan lancar dan tepat waktu.
+            </p>
+            <div class="exp-tags">
+              <span>Kepemimpinan</span>
+              <span>Koordinasi Lapangan</span>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item Kepanitiaan 3 -->
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Staff Divisi Acara</h3>
+                <h4 class="exp-org">Riuh Wisuda HME x HMIF Periode Juli</h4>
+              </div>
+              <span class="exp-date"><i class="fa-regular fa-calendar"></i> Juli 2026</span>
+            </div>
+            <p class="exp-desc">
+              Mengatur dan mengawasi jalannya seluruh rangkaian acara wisuda, memastikan setiap sesi berjalan sesuai
+              jadwal, serta berkoordinasi dengan tim lain untuk menjaga kelancaran acara.
+            </p>
+            <div class="exp-tags">
+              <span>Manajemen Waktu</span>
+              <span>komunikasi Efektif</span>
+              <span>Koordinasi</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item Kepanitiaan 4 -->
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Staff Divisi Operasional</h3>
+                <h4 class="exp-org">First Meet Maba Angkatan 2026</h4>
+              </div>
+              <span class="exp-date"><i class="fa-regular fa-calendar"></i> Agustus 2026</span>
+            </div>
+            <p class="exp-desc">
+              Mengelola seluruh persiapan teknis dan operasional dalam pemilihan ketua angkatan.
+              Fokus utama saya adalah mengawal setiap alur kegiatan agar berjalan kondusif, efisien, dan tepat waktu sesuai lini masa.
+            </p>
+            <div class="exp-tags">
+              <span>Persiapan Teknis</span>
+              <span>Manajemen Logistik</span>
+              <span>Manajemen Inventaris</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item Kepanitiaan 5 -->
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Kepala Sub-Divisi Time Keeper</h3>
+                <h4 class="exp-org">Informatics Goes To TPB (IGTTPB)</h4>
+              </div>
+              <span class="exp-date"><i class="fa-regular fa-calendar"></i> November 2026</span>
+            </div>
+            <p class="exp-desc">
+              Menyusun dan mengontrol rundown acara lintas divisi serta memastikan seluruh mata acara berjalan sesuai
+              target alokasi waktu.
+            </p>
+            <div class="exp-tags">
+              <span>Manajemen Waktu</span>
+              <span>Kedisiplinan</span>
+              <span>Koordinasi Alur Acara</span>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Tech Stack &amp; Tools</h2>
+        <div class="section-line"></div>
+      </div>
+    
+      <div class="skills-wrapper">
+        <!-- Kotak 1: Teknologi Utama -->
+        <div class="skill-box">
+          <h3 class="skill-box-title">
+            <i class="fa-solid fa-code"></i> Teknologi Utama
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-html5" style="color: #e34f26;"></i> HTML</span>
+            <span class="skill-tag"><i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i> CSS</span>
+            <span class="skill-tag"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript</span>
+            <span class="skill-tag"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git &amp; GitHub</span>
+            <span class="skill-tag"><i class="fa-solid fa-code" style="color: #007acc;"></i> VS Code</span>
+          </div>
+        </div>
+    
+        <!-- Kotak 2: Sedang Dipelajari -->
+        <div class="skill-box exploring">
+          <h3 class="skill-box-title">
+            <i class="fa-solid fa-seedling"></i> Sedang Dipelajari
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-react" style="color: #61dafb;"></i> React.js</span>
+            <span class="skill-tag"><i class="fa-solid fa-wind" style="color: #38bdf8;"></i> Tailwind CSS</span>
+            <span class="skill-tag"><i class="fa-brands fa-figma" style="color: #f24e1e;"></i> Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTOFOLIO SECTION -->
+    <!-- Kartu Proyek Study Planner -->
+    <section id="portofolio" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Project Portofolio</h2>
+        <div class="section-line"></div>
+      </div>
+    
+      <div class="portfolio-grid">
+        <article class="project-card">
+          <div class="project-preview">
+            <div class="browser-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="browser-title">study-planner.app</span>
+            </div>
+            <img src="images/study-planner.png" alt="Screenshot ITERA Study Planner" class="project-img">
+          </div>
+          <div class="project-info">
+            <span class="project-category">Web Application</span>
+            <h3 class="project-title">ITERA Interactive Study Planner</h3>
+            <p class="project-desc">
+              Aplikasi manajemen tugas dan jadwal belajar mahasiswa dengan indikator progres visual, penyaringan prioritas,
+              dan
+              integrasi LocalStorage.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>LocalStorage API</span>
+            </div>
+            <div class="project-links">
+              <!-- Tautan Repositori GitHub -->
+              <a href="https://github.com/andikafirmansyahh/Study-planner" target="_blank" class="proj-btn">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+              <!-- Tautan Hasil Deploy Vercel / Netlify -->
+              <a href="https://study-planner-eight-woad-13.vercel.app/" target="_blank" class="proj-btn primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Use App
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 (Coming Soon) -->
+        <article class="project-card project-coming-soon">
+          <div class="project-preview">
+            <div class="browser-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="browser-title">qr-code-generator.app</span>
+            </div>
+            <div class="project-img-placeholder">
+              <i class="fa-solid fa-hourglass-half" style="color: #f59e0b;"></i>
+              <span style="font-weight: 600; color: #f59e0b;">Coming Soon</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category" style="color: #f59e0b;">
+              <i class="fa-solid fa-code-commit"></i> Dalam Pengembangan
+            </span>
+            <h3 class="project-title">QR Code Generator</h3>
+            <p class="project-desc">
+              Aplikasi pembuat kode QR instan dari URL atau teks secara real-time dilengkapi fitur pengunduhan gambar PNG tanpa gangguan iklan.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>CSS</span>
+              <span>QRCode.js</span>
+            </div>
+            <div class="project-links">
+              <a href="javascript:void(0)" class="proj-btn disabled" style="opacity: 0.5; cursor: not-allowed;">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+              <a href="javascript:void(0)" class="proj-btn disabled"
+                style="opacity: 0.5; cursor: not-allowed; border-color: rgba(245, 158, 11, 0.4); color: #f59e0b;">
+                <i class="fa-solid fa-clock"></i> Coming Soon
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT PERSON SECTION -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Contact Person</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Mari Berdiskusi & Kolaborasi!</h3>
+          <p>
+            Apakah Anda memiliki proyek web, tawaran magang/kerja, atau sekadar ingin berdiskusi seputar dunia Front End Development? Jangan ragu untuk menghubungi saya!
+          </p>
+
+          <div class="contact-cards">
+            <a href="mailto:firmansyahandika181@gmail.com" class="c-card">
+              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="c-label">Email</span>
+                <span class="c-val">firmansyahandika181@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/6281312322948" target="_blank" class="c-card">
+              <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <span class="c-label">WhatsApp</span>
+                <span class="c-val">+62 813-1232-2948</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/andikafirmansyahh" target="_blank" class="c-card">
+              <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <span class="c-label">LinkedIn</span>
+                <span class="c-val">Andika Firmansyah</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+        
+          <!-- 1. Form Utama -->
+          <form id="contactForm" action="https://formspree.io/f/xnpprrja" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan atau penawaran Anda di sini..."
+                required></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn-submit">
+              <i class="fa-solid fa-paper-plane"></i> <span class="btn-text">Kirim Pesan</span>
+            </button>
+          </form>
+        
+          <!-- 2. Tampilan Animasi Sukses (Sembunyi Secara Default) -->
+          <div id="contactSuccess" class="contact-success-card" style="display: none;">
+            <div class="success-icon-wrapper">
+              <div class="success-icon-circle">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+            <h3>Pesan Terkirim!</h3>
+            <p>Terima kasih telah menghubungi saya. Pesan Anda telah terkirim ke email saya dan akan segera saya tanggapi.</p>
+            <button type="button" id="resetFormBtn" class="btn-submit secondary">
+              <i class="fa-solid fa-rotate-left"></i> Kirim Pesan Lain
+            </button>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Designed & Developed by <strong>Andika Firmansyah</strong> &copy; 2026</p>
+      <p class="footer-sub">Dibuat dengan HTML, CSS, & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
